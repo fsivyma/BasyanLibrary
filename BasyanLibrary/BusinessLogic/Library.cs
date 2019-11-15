@@ -10,7 +10,7 @@ namespace BasyanLibrary.BusinessLogic
         private User _user;
         
         // each book has an associated page read number representing how far
-        // along the user is in the book
+        // along the user is in the book -> this is a dumb edit
         private Dictionary<Book, int> _books = new Dictionary<Book, int>();
 
 
