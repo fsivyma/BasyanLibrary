@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasyanLibrary", "BasyanLibrary\BasyanLibrary.csproj", "{D95AC288-505F-4A84-BE7A-CBFB16EFF59C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D95AC288-505F-4A84-BE7A-CBFB16EFF59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95AC288-505F-4A84-BE7A-CBFB16EFF59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95AC288-505F-4A84-BE7A-CBFB16EFF59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95AC288-505F-4A84-BE7A-CBFB16EFF59C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B85DEA66-3A63-48A1-92D9-5A5EF0305362}
+	EndGlobalSection
+EndGlobal
