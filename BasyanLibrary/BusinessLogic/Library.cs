@@ -8,7 +8,9 @@ namespace BasyanLibrary.BusinessLogic
     public class Library
     {
         private User _user;
-        //private List<Book> _books = new List<Book>();
+        
+        // each book has an associated page read number representing how far
+        // along the user is in the book
         private Dictionary<Book, int> _books = new Dictionary<Book, int>();
 
 
