@@ -9,7 +9,6 @@ namespace BasyanLibrary.BusinessLogic
     {
         private string _name;
         private string _username;
-        private string _password;
 
         public string Name 
         {
@@ -23,17 +22,10 @@ namespace BasyanLibrary.BusinessLogic
             set { _username = value; }
         }
 
-        public string Password
-        {
-            get { return _password; }
-            set { _password = value; }
-        }
-
-        public User (string name, string username, string password)
+        public User (string name, string username)
         {
             Name = name;
             Username = username;
-            Password = password;
         }
 
     }
