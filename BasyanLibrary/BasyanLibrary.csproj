@@ -75,9 +75,25 @@
     <Compile Include="BusinessLogic\Genre.cs" />
     <Compile Include="BusinessLogic\Library.cs" />
     <Compile Include="BusinessLogic\User.cs" />
+    <Compile Include="DemoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DemoDataSet.xsc">
+      <DependentUpon>DemoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="DemoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DemoDataSet.xss">
+      <DependentUpon>DemoDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
