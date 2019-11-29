@@ -8,7 +8,7 @@ namespace BasyanLibrary.BusinessLogic
     public class Author
     {
         private string _name;
-        private DateTime _dob;
+        private readonly DateTime _dob;
         private string _country;
         private List<Genre> _genres;
 
@@ -16,12 +16,6 @@ namespace BasyanLibrary.BusinessLogic
         {
             get { return _name; }
             set { _name = value; }
-        }
-
-        public DateTime DOB
-        {
-            get { return _dob; }
-            set { _dob = value; }
         }
 
         public string Country
@@ -36,12 +30,15 @@ namespace BasyanLibrary.BusinessLogic
             set { _genres = value; }
         }
 
+        public DateTime Dob => _dob;
+
         public Author(string name, DateTime dob, List<Genre> genres, string country)
         {
             Name = name;
-            DOB = dob;
             Genres = genres;
             Country = country;
+
+            _dob = dob;
         }
     }
 }

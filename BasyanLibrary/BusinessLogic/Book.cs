@@ -7,22 +7,20 @@ namespace BasyanLibrary.BusinessLogic
 {
     public class Book
     {
-        private string _title;
-        private Author _author;
+        private readonly string _title;
+        private readonly Author _author;
         private Genre[] _genres;
-        private int _year;
+        private readonly int _year;
         private readonly int _pageCount;
      
         public string Title
         {
             get { return _title; }
-            set { _title = value; }
         }
 
         public Author Author
         {
             get { return _author; }
-            set { _author = value; }
         }
 
         public Genre[] Genres
@@ -34,7 +32,6 @@ namespace BasyanLibrary.BusinessLogic
         public int Year
         {
             get { return _year; }
-            set { _year = value; }
         }
 
         public int PageCount
@@ -44,10 +41,10 @@ namespace BasyanLibrary.BusinessLogic
 
         public Book(string title, Author author, Genre[] genres, int year, int pageCount)
         {
-            Title = title;
-            Author = author;
+            _title = title;
+            _author = author;
             Genres = genres;
-            Year = year;
+            _year = year;
             _pageCount = pageCount;
         }
 
