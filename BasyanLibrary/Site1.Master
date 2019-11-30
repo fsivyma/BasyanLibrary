@@ -7,11 +7,30 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .MainMenu {
+            margin:3px;
+            color: white;
+            font-size: medium;            
+            padding: 3px;
+        }
+        .MainMenu a {
+            color:white;
+            background-color: navy;
+            border: 5px solid white;
+            margin: 3px;
+            padding: 3px;
+        }
+        .MainMenu ul {
+            background-color:navy;
+            
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"  CssClass="MainMenu"
                       Orientation="Horizontal">
             </asp:Menu>
         </div>
