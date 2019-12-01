@@ -7,12 +7,17 @@ namespace BasyanLibrary.BusinessLogic
 {
     public class Book
     {
+        private readonly int _id;
         private readonly string _title;
         private readonly Author _author;
         private Genre[] _genres;
         private readonly int _year;
-        private readonly int _pageCount;
-     
+
+        public int Id
+        {
+            get { return _id; }
+        }
+
         public string Title
         {
             get { return _title; }
@@ -34,18 +39,13 @@ namespace BasyanLibrary.BusinessLogic
             get { return _year; }
         }
 
-        public int PageCount
+        public Book(int id, string title, Author author, Genre[] genres, int year)
         {
-            get { return _pageCount; }
-        }
-
-        public Book(string title, Author author, Genre[] genres, int year, int pageCount)
-        {
+            _id = id;
             _title = title;
             _author = author;
             Genres = genres;
             _year = year;
-            _pageCount = pageCount;
         }
 
     }

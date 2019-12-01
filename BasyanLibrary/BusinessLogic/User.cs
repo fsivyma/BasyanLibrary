@@ -7,8 +7,14 @@ namespace BasyanLibrary.BusinessLogic
 {
     public class User
     {
+        private readonly int _id;
         private string _name;
         private string _username;
+
+        public int Id
+        {
+            get { return _id; }
+        }
 
         public string Name 
         {
@@ -22,8 +28,9 @@ namespace BasyanLibrary.BusinessLogic
             set { _username = value; }
         }
 
-        public User (string name, string username)
+        public User (int id, string name, string username)
         {
+            _id = id;
             Name = name;
             Username = username;
         }
